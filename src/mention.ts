@@ -251,21 +251,22 @@ export function createMention(
       renderLoading: () => null,
     };
 
-    private isOpen: boolean;
-    private itemIndex: number;
-    private mentionCharPos?: number;
-    private cursorPos?: number;
-    private values: { id: string; value: string; [key: string]: unknown }[];
-    private suspendMouseEnter: boolean;
+    public isOpen: boolean;
+    public itemIndex: number;
+    public mentionCharPos?: number;
+    public cursorPos?: number;
+    public values: { id: string; value: string; [key: string]: unknown }[];
+    public suspendMouseEnter: boolean;
     /**
      * this token is an object that may contains one key "abandoned", set to
      * true when the previous source call should be ignored in favor or a
      * more recent execution. This token will be undefined unless a source call
      * is in progress.
      */
-    private existingSourceExecutionToken?: { abandoned: boolean };
-    private mentionContainer: HTMLDivElement;
-    private mentionList: HTMLUListElement;
+    public existingSourceExecutionToken?: { abandoned: boolean };
+    public mentionContainer: HTMLDivElement;
+    public mentionList: HTMLUListElement;
+    public options: MentionOption;
 
     constructor(quill: Quill, options?: Partial<MentionOption>) {
       super(quill, options);
