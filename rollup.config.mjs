@@ -2,7 +2,7 @@ import postcss from "rollup-plugin-postcss";
 import terser from "@rollup/plugin-terser";
 import typescript from "@rollup/plugin-typescript";
 
-const input = ["src/index.ts", "src/autoregister.ts"];
+const input = ["src/index.ts"];
 const external = ["quill"];
 
 /** @type {import("rollup").OutputOptions[]} */

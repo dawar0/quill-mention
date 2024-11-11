@@ -1,5 +1,5 @@
 {
-  "name": "quill-mention",
+  "name": "@dawar0/quill-mention",
   "version": "6.0.2",
   "description": "@mentions for the Quill rich text editor",
   "homepage": "https://quill-mention.com/",
@@ -13,14 +13,8 @@
       "import": "./dist/index.mjs",
       "default": "./dist/index.mjs"
     },
-    "./autoregister": {
-      "types": "./dist/autoregister.d.ts",
-      "import": "./dist/autoregister.mjs",
-      "default": "./dist/autoregister.mjs"
-    },
     "./dist/*.css": {
-      "import": "./dist/*.css",
-      "default": "./dist/autoregister.mjs"
+      "import": "./dist/*.css"
     }
   },
   "repository": "https://github.com/quill-mention/quill-mention.git",
